@@ -20,7 +20,35 @@
 	<link rel="stylesheet" href="assets/css/style.min.css">
 
 </head>
-
+<style> .wrapper {
+	height: 10vh;
+	/*This part is important for centering*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .typing-demo {
+	width: 22ch;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-family: monospace;
+	font-size: 3em;
+  }
+  
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+	  
+  @keyframes blink {
+	50% {
+	  border-color: transparent
+	}
+  }</style>
 <body>
 	<!-- preloader start here -->
     <div class="preloader">
@@ -133,18 +161,26 @@
 	<section class="banner-section" style="background-image: url(assets/images/banner/bg.jpg);">
 		<div class="container">
 	
-					
+			<section>		
 			<div class="banner-thumb-img mr-xl-50-none banner-content text-left" >
 						  <img src="assets/images/banner/010.gif" class="spin"/>
 				</div>
+				<div><p></p></div>
+				</section>
+				<section>
+				<div class="wrapper" class="banner-thumb-img mr-xl-50-none banner-content text-left">
+					<div class="typing-demo">
+					  You Know The Vibes
+					</div>
 					
-						
+				</section>
 						<div class="banner-thumb-img mr-xl-50-none banner-content text-center" >
 							<a href="http://www.younow.com/keekay_yktv"><img src="assets/images/banner/live2.png" alt="banner-thumb"></a>
 						<div>
 
 						</div>
 					
+						</div>
 					</div>
 				</div>
 					
